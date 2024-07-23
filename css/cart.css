@@ -1,0 +1,52 @@
+/* Styles for the shopping cart page */
+
+/* Cart items list */
+#cartItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Cart item styling */
+#cartItems li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Gray border between items */
+    padding-bottom: 5px;
+}
+
+/* Cart item price styling */
+#cartItems li span {
+    font-weight: bold;
+    color: #f84258; /* Red color for price */
+}
+
+/* Cart page heading */
+h1 {
+    color: #f84258; /* Red color for headings */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Button styles for clearing the cart */
+.btn-clear-list {
+    background-color: #f84258; /* Red color for buttons */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-clear-list:hover {
+    background-color: #e1314c; /* Lighter shade of red on hover */
+}
+
+/* Empty cart message */
+.empty-cart-msg {
+    color: #333; /* Dark text color */
+    text-align: center;
+    margin-top: 50px;
+}

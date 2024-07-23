@@ -1,0 +1,212 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Product container styles */
+.product-container {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    margin: 10px;
+    border: 1px solid #ffb6c1; /* Light pink border */
+    padding: 10px;
+    width: 200px; /* Adjust as needed */
+    background-color: #f9d4a6; /* Soft pink background color */
+}
+
+.product-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    font-weight: bolder;
+    color: black;
+    text-align: center; /* Center-align text */
+}
+
+.product-price {
+    color: #f84258; /* Dark pink color for price */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-description {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Center-align text */
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+    background-color: #f84258; /* Dark pink color for buttons */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover {
+    background-color: #e1314c; /* Lighter shade of pink on hover */
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+a {
+    outline: none; /* Remove outline on anchor tags */
+    color: #8e44ad; /* Royal purple color for links */
+}
+
+/* Background image section */
+.bg-images {
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.bg-images img {
+    width: 100%; /* Adjusted image width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Maximum width for the image */
+    object-fit: cover; /* Cover the container */
+}
+
+/* Centered content */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Headings and text styles */
+.main-head-of-products {
+    color: #8e44ad; /* Royal purple color for headings */
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-weight: 700; /* Bold font weight */
+}
+
+.colored-word {
+    color: #f84258; /* Red color for specific words */
+}
+
+.colored-word-bigger-size {
+    color: #f84258; /* Red color for specific words */
+    font-size: 35px; /* Increased font size */
+}
+
+.bigletter {
+    font-size: 80px; /* Large font size for big letters */
+}
+
+.header-categories {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 23px;
+    color: #8e44ad; /* Royal purple color for headings */
+}
+
+.info-of-head {
+    text-align: center;
+}
+
+.products-hr,
+.hr-of-cart-head,
+.last-hr-of-product {
+    border: 1px solid #333; /* Dark border color */
+    width: 100%;
+}
+
+/* Grid layout for categories */
+.kurti,
+.western,
+.heels,
+.g-shoes,
+.shirts,
+.shoes,
+.joggers,
+.jeans {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-left: 50px;
+}
+
+/* Responsive adjustments for grid layout */
+@media screen and (max-width: 974px) {
+    .kurti,
+    .western,
+    .heels,
+    .g-shoes,
+    .shirts,
+    .shoes,
+    .joggers,
+    .jeans {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Button styles */
+.btn-of-img,
+.btn-clear-list {
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.2s;
+    background: none;
+    color: #333; /* Dark text color */
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+}
+
+.btn-clear-list:hover {
+    background-color: #ece3e3;
+}
+
+/* Cart details styles */
+.cart-details {
+    padding-left: 50px;
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+}
+
+.cart-details li {
+    list-style-type: decimal;
+}
+
+.head-of-cart {
+    color: #f84258; /* Red color for specific words */
+}
+
+.msg-ps,
+.sry-msg {
+    color: #333; /* Dark text color */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* List styles */
+.ul_pr li {
+    font-size: 18px;
+}
+
+/* Cursor pointer for all images */
+img {
+    cursor: pointer;
+}

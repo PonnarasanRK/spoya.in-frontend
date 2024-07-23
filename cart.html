@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Shopping Cart</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="icon" type="Image" href="images/logo/dress.jpg">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h3><a href="merlin.html" class="logo-name">Spoya.in</a></h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="cart.html">Cart</a>🛒</li>
+            <li><a href="login.html" id="login">Login</a></li>
+            
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <h1>Your Shopping Cart</h1>
+    <ul id="cartItems"></ul>
+
+    <script>
+        // Initialize an empty array to store cart items
+        var cartItems = [];
+
+        // Function to add item to the cart
+        function addToCart(productName, price) {
+            // Create a new cart item object
+            var newItem = {
+                name: productName,
+                price: price
+            };
+
+            // Add the new item to the cart
+            cartItems.push(newItem);
+
+            // Call the displayCart function to update the cart display
+            displayCart();
+
+            // Optionally, you can provide feedback to the user that the item was added to the cart
+            alert('Item added to cart!');
+        }
+
+        // Function to display cart items on the cart page
+        function displayCart() {
+            var cartList = document.getElementById('cartItems');
+            cartList.innerHTML = ''; // Clear the existing items
+
+            if (cartItems.length === 0) {
+                cartList.innerHTML = '<li>Your cart is empty.</li>';
+            } else {
+                cartItems.forEach(function(item) {
+                    var li = document.createElement('li');
+                    li.textContent = item.name + ' - Rs. ' + item.price;
+                    cartList.appendChild(li);
+                });
+            }
+        }
+
+        // Call the displayCart function when the cart page loads
+        window.onload = function() {
+            displayCart(); // Display cart items
+        };
+    </script>
+   <script src="js/product.js"></script> <!-- Assuming this is your product-related JavaScript -->
+</body>
+</html>

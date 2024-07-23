@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="icon" type="Image" href="images/logo/dress.jpg">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h3><a href="merlin.html" class="logo-name">Spoya.in</a></h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+            <li><a href="login.html" id="login">Login</a></li>
+            <li><a href="cart.html">Cart</a>🛒</li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- Navbar --> 
+
+    <h2 class="main-head-of-products">Everyone Has A Style Statement<br>
+    <span class="colored-word-bigger-size">FIND YOURS HERE!</span>
+    </h2>
+    <br>
+
+    <div class="bg-images">
+        <a href="products.html"><img src="images/products-image/sp45.jpg" alt=""></a>
+    </div>
+
+    <center>
+        <p class="msg-ps">
+            <span class="colored-word">Click</span> on the product to add it to your shopping list.
+            <br>Go below and check <span class="colored-word">YOUR CART</span> for details.
+        </p>
+    </center>
+
+    <div>
+        <h1>For <span class="colored-word">Her</span></h1>
+        <center><hr class="products-hr"></center>
+        <br><br>
+    
+        <div class="kurti">
+            <div class="product-container">
+                <img src="images/products-image/sp12.png" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1999</p>
+                    <p class="product-description">Sp12</p>
+                    <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp12', 1999)">Add to Cart</button>
+                        <br><br>
+                       <button class="buy-now-btn" onclick="buynow('Sp12', 1999)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+        <div class="product-container">
+            <img src="images/products-image/sp13.jpg" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 999</p>
+                <p class="product-description">Sp13</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp13', 999)">Add to Cart</button>
+                    <br><br>
+                    <button class="buy-now-btn" onclick="buynow('Sp13', 999)">Buy Now</button>
+               </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="images/products-image/sp14.png" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1599</p>
+                <p class="product-description">Sp14</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp14', 1599)">Add to Cart</button>
+                    <br><br>
+                    <button class="buy-now-btn" onclick="buynow('Sp14', 1599)">Buy Now</button>
+               </div>
+            </div>
+        </div>
+    
+            <div class="product-container">
+                <img src="images/products-image/sp17.png" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1799</p>
+                    <p class="product-description">Sp17</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp17', 1799)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp17', 1799)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp20.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp20</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp20', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp20', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp21.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp21</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp21', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp21', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+
+                <div class="product-container">
+                    <img src="images/products-image/sp22.jpg" alt="">
+                    <div class="product-details">
+                        <p class="product-price">Rs. 999</p>
+                        <p class="product-description">Sp22</p>
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" onclick="addToCart('Sp22', 999)">Add to Cart</button>
+                            <br><br>
+                            <button class="buy-now-btn" onclick="buynow('Sp22', 999)">Buy Now</button>
+                       </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <img src="images/products-image/sp23.jpg" alt="">
+                    <div class="product-details">
+                        <p class="product-price">Rs. 999</p>
+                        <p class="product-description">Sp23</p>
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" onclick="addToCart('Sp23', 999)">Add to Cart</button>
+                            <br><br>
+                            <button class="buy-now-btn" onclick="buynow('Sp23', 999)">Buy Now</button>
+                       </div>
+                    </div>
+                </div>
+            
+            
+            <div class="product-container">
+                <img src="images/products-image/sp24.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp24</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp24', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp24', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp27.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1599</p>
+                    <p class="product-description">Sp27</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp27', 1599)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp27', 1599)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp29.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp29</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp29', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp29', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp30.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp30</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp30', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp30', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div> 
+
+            <div class="product-container">
+                <img src="images/products-image/sp31.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp31</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp31', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp31', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp32.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp32</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp32', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp32', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp33.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp33</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp33', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp33', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp34.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp34</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp34', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp34', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp35.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp35</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp35', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp35', 1199)">Buy Now</button>
+
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp36.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp36</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp36', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp36', 1199)">Buy Now</button>
+
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp37.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1599</p>
+                    <p class="product-description">Sp37</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp37', 1599)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp37', 1599)">Buy Now</button>
+
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp38.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp38</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp38', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp38', 1199)">Buy Now</button>
+
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp39.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp39</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp39', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp39', 1199)">Buy Now</button>
+
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp40.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp40</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp40', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp40', 1199)">Buy Now</button>
+
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp41.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp41</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp41', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp41', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp42.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp42</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp42', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp42', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp43.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 2099</p> 
+                    <p class="product-description">Sp43</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp43', 2099)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp43', 2099)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp44.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp44</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp44', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp44', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp45.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1799</p>
+                    <p class="product-description">Sp45</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp45', 1799)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp45', 1799)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            
+            <div class="product-container">
+                <img src="images/products-image/sp46.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp46</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp46', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp46', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp47.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp47</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp47', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp47', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp48.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1999</p>
+                    <p class="product-description">Sp48</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp48', 1999)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp48', 1999)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp49.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 4999</p>
+                    <p class="product-description">Sp49</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp49', 4999)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp49', 4999)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp50.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 2099</p>
+                    <p class="product-description">Sp50</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp50', 2099)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp50', 2099)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp51.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1799</p>
+                    <p class="product-description">Sp51</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp51', 1799)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp51', 1799)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/SP52.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 999</p>
+                    <p class="product-description">Sp52</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp52', 999)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp52', 999)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp53.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp53</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp53', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp53', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp54.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1599</p>
+                    <p class="product-description">Sp54</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp54', 1599)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp54', 1599)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp55.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 2099</p>
+                    <p class="product-description">Sp55</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp55', 2099)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp55', 2099)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp57.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp57</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp57', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp57', 1199)">Buy Now</button>
+                </div>
+            </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp58.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp58</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp58', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp58', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp59.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp59</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp59', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp59', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp60.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1299</p>
+                    <p class="product-description">Sp60</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp60', 1299)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp60', 1299)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp61.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 2599</p>
+                    <p class="product-description">Sp61</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp61', 2599)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp61', 2599)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp62.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp62</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp62', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp62', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp63.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp63</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp63', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp63', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp64.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1499</p>
+                    <p class="product-description">Sp64</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp64', 1499)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp64', 1499)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp65.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1799</p>
+                    <p class="product-description">Sp65</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp65', 1799)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp65', 1799)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp66.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1199</p>
+                    <p class="product-description">Sp66</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp66', 1199)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp66', 1199)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <img src="images/products-image/sp67.jpg" alt="">
+                <div class="product-details">
+                    <p class="product-price">Rs. 1299</p>
+                    <p class="product-description">Sp67</p>
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn" onclick="addToCart('Sp67', 1299)">Add to Cart</button>
+                        <br><br>
+                        <button class="buy-now-btn" onclick="buynow('Sp67', 1299)">Buy Now</button>
+                   </div>
+                </div>
+            </div>
+    </div>
+    <br>
+
+    <h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
+    <center><hr class="last-hr-of-product"></center>
+    <br><br><br>
+
+    <script src="nav.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+
+
+</body>
+</html>

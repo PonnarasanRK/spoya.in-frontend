@@ -1,0 +1,67 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* Product image grid */
+.product-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1160px, 1fr));
+    gap: 20px; /* Added gap between grid items for better spacing */
+    padding: 20px; /* Added padding to the grid */
+}
+
+/* Headings */
+h1 {
+    padding-top: 110px;
+    margin: 20px;
+    text-align: center;
+    font-size: 2rem; /* Adjusted font size for better readability */
+}
+
+/* Horizontal line */
+hr {
+    max-width: 200px;
+    margin: 20px auto; /* Center the horizontal line */
+    border: 1px solid #caa529;
+}
+
+/* Colors */
+#name-fashion {
+    color: #f84258;
+}
+
+.trends-header, .main-head-of-color-gold {
+    color: #caa529;
+}
+
+/* Grid layout for categories */
+.trends-categories, .for-her {
+    display: grid;
+    gap: 20px; /* Added gap between grid items */
+    padding: 0 50px; /* Adjusted padding */
+}
+
+.trends-categories {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.for-her {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 984px) {
+    .trends-categories, .for-her{
+        padding: 0 20px; /* Adjusted padding */
+    }
+}

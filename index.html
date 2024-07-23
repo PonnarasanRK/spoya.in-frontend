@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Women's Fashion</title>
+  <link rel="icon" type="image/x-icon" href="images/logo/dress.jpg">
+  <!-- External CSS Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nova+Cut|Nova+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style_index.css">
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/categories.css">
+  <link rel="stylesheet" href="css/product_container.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <h3><a href="index.html" class="logo-name">Spoya.in</a></h3>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="cart.html">cart</a>🛒</li>
+      <!-- Search bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for products...">
+        <button onclick="searchProducts()">Search</button>
+    </div>
+      
+            
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!-- Container for search results -->
+<div id="searchResults"></div>
+
+
+    <!-- Navbar -->
+
+    <!-- Main Image -->
+    <div class="index-main-img">
+        <a href="index.html" style="display: block; width: 105%; height: 750px; overflow: visible;">
+            <img id="main-index-img" src="images/logo/IMG-20240205-WA0000.jpg" alt="" style="width: 105%; height: 750px;">
+        </a>
+    </div>
+    
+
+    <!-- Offers -->
+    <div>  <a href="categories.html">
+        <h4 class="info-of-img-below">For the Young, Wild & Stylish</h4>
+    </a>          
+    <a href="categories.html">
+        <h4 class="info-of-img-below">Just like your way to Conquer</h4>
+    </a>
+    <a href="categories.html">
+        <h4 class="info-of-img-below">Stands out like the Sun</h4>
+    </a>
+</div>
+     <!-- Styles to Steal -->
+    <div>
+     <h2 class="head-of-offer">STYLES TO STEAL</h2>
+     <p class="para-of-offer">Inspired by influencers</p>
+    </div>
+
+    <!-- Grid Images -->
+    <div class="index-grid-img-1">
+        <div class="product-container">
+            <img src="images/products-image/sp01.JPG" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1199</p>
+                <p class="product-description">Sp01</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp01', 1199)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp01', 1199)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="images/products-image/sp02.JPG" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1199</p>
+                <p class="product-description">Sp02</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp02', 1199)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp02', 1199)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="images/products-image/sp03.JPG" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1599</p>
+                <p class="product-description">Sp03</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp03', 1599)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp03', 1599)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="index-grid-img-2">
+        <div class="product-container">
+            <img src="images/products-image/sp04.JPG" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1799</p>
+                <p class="product-description">Sp04</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp04', 1799)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp04', 1799)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="images/products-image/sp05.PNG" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1599</p>
+                <p class="product-description">Sp05</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp05', 1599)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp05', 1599)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="images/products-image/sp07.png" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1599</p>
+                <p class="product-description">Sp07</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp07', 1599)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp07', 1599)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Trending Now -->
+    <h2 class="head-of-offer">TRENDING NOW</h2>
+    <p class="para-of-offer">From the runway to your wardrobe</p>
+
+    <!-- Trending Images -->
+    <div class="index-grid-img-3">
+        <div class="product-container">
+            <img src="images/products-image/sp08.png" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1999</p>
+                <p class="product-description">Sp08</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp08', 1999)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp08', 1999)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="images/products-image/sp09.png" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1999</p>
+                <p class="product-description">Sp09</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp09', 1999)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp09', 1999)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="images/products-image/sp10.png" alt="">
+            <div class="product-details">
+                <p class="product-price">Rs. 1999</p>
+                <p class="product-description">Sp10</p>
+                <div class="product-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart('Sp10', 1999)">Add to Cart</button>
+                    <br><br>
+                   <button class="buy-now-btn" onclick="buynow('Sp10', 1999)">Buy Now</button>
+               </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+     
+    <!-- Footer --> 
+    <div class="footer-container">
+        <div class="footer-1">
+            <a href="index.html"><h2>SPOYA.IN🦋</h2></a>
+            <br>
+            <p><b>ONLINE SHOPPING</b></p>
+            <h6>
+                Women <br><br>
+                Spoya Exclusive<br><br>
+            </h6>
+        </div>
+
+        <div class="footer-2">
+            <p><b>USEFUL LINKS</b></p>
+
+            <h6>
+                Contact Us<br><br>
+                FAQ<br><br>
+                T&C<br><br>
+                Blog<br><br>
+                Privacy Policy<br><br>
+            </h6>
+        </div>
+
+        <div class="footer-3">
+            <p><b>100% Original</b> guarantee</p>
+            <h6>
+                for all products at spoya.in.com
+            </h6>
+            <br>
+            <p><b>Return within 30days</b> of</p>
+            <h6>
+                receiving your order
+            </h6>
+            <br>
+            <p><b>Get free delivery</b> for every</p>
+            <h6>
+                order above Rs.999
+            </h6>
+            <br><br>
+        </div>
+    </div>
+    <p class="copy-right"><a href="index.html">Spoya.in</a>&copy;2024</p>
+    <!-- Footer -->
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script src="js/cart.js"></script>
+    <script> src="js/server.js"</script>
+    <!-- JavaScript -->
+    <!-- JavaScript -->
+<script>
+    // Sample product data (replace with your actual product data)
+    const products = [
+        { id: 1, name: 'Sp01', price: 1199 },
+        { id: 2, name: 'Sp02', price: 1199 },
+        { id: 3, name: 'Sp03', price: 1599 },
+        // Add more product data as needed
+    ];
+
+    function searchProducts() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchTerm));
+
+        displaySearchResults(filteredProducts);
+    }
+
+    function displaySearchResults(results) {
+        // Clear any previous search results
+        const searchResultsContainer = document.getElementById('searchResults');
+        searchResultsContainer.innerHTML = '';
+
+        if (results.length === 0) {
+            // Display message if no products match the search term
+            searchResultsContainer.textContent = 'No products found.';
+        } else {
+            // Create a list to display search results
+            const ul = document.createElement('ul');
+            results.forEach(product => {
+                const li = document.createElement('li');
+                li.textContent = `${product.name} - Rs. ${product.price}`;
+                ul.appendChild(li);
+            });
+            searchResultsContainer.appendChild(ul);
+        }
+    }
+</script>
+
+</body>
+</html>
+
